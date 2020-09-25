@@ -1,0 +1,40 @@
+{
+  "name": "switch-client",
+  "version": "0.1.0",
+  "description": "JS SDK for switch service allowing you to publish messages on topics that trigger the registered subscribers at switch service",
+  "main": "switch-client.js",
+  "scripts": {
+    "test": "mocha --timeout 5000 --exit",
+    "lint": "eslint --ignore-path .eslintignore ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kareem-Emad/switch-js.git"
+  },
+  "keywords": [
+    "pubsub",
+    "events"
+  ],
+  "author": "kareem emad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kareem-Emad/switch-js/issues"
+  },
+  "homepage": "https://github.com/Kareem-Emad/switch-js#readme",
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "lodash": "^4.17.20",
+    "nock": "^13.0.4",
+    "mocha": "^5.2.0",
+    "eslint": "^5.0.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-mocha": "^7.0.1"
+  }
+}
