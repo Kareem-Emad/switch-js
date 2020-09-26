@@ -1,6 +1,6 @@
 {
   "name": "switch-client",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "JS SDK for switch service allowing you to publish messages on topics that trigger the registered subscribers at switch service",
   "main": "switch-client.js",
   "scripts": {
