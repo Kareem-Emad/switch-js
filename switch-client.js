@@ -6,7 +6,7 @@ const SWITCH_JWT_SECRET = process.env.SWITCH_JWT_SECRET || 'my_little_secret';
 
 /**
  * @function {publish}
- * @summary check and acquire lock if avaiable
+ * @summary publishes data on the specified topic to trigger the topic subscribers
  * @param topic (string) topic to be triggered by this message
  * @param author (string) identifying string of this service or author of the request
  * @param options (object) request data including (headers, body, query_params, path_params, http_method) keys
@@ -33,7 +33,7 @@ const publish = function(topic, author, options) {
 
 /**
  * @function {encodePayload}
- * @summary check and acquire lock if avaiable
+ * @summary encodes the data object into a base64 string
  * @param data (object) request data including (headers, body, query_params, path_params, http_method) keys
  * @returns {string} request data encoded as base64 string
  */
@@ -43,7 +43,7 @@ const encodePayload = function(data) {
 
 /**
  * @function {generateToken}
- * @summary check and acquire lock if avaiable
+ * @summary signs a new token with the switch service key
  * @param author (string) identifying string of this service or author of the request
  * @returns {string} generates signed jwt token to verify identity with switch service
  */
